@@ -1,0 +1,111 @@
+[
+    {
+        "query_id": "q1",
+        "query_text": "STM32F103C8 3.3V MCU with at least 64KB Flash, 20KB SRAM, and SPI",
+        "target_component": "STM32F103C8",
+        "relevant_sources": ["DS_stm32f103c8.pdf", "DS_stm32f103rb.pdf"],
+        "expected_flash": 64,
+        "expected_sram": 20
+    },
+    {
+        "query_id": "q2",
+        "query_text": "ESP32 Wi-Fi Bluetooth operating voltage",
+        "target_component": "ESP32",
+        "relevant_sources": ["esp32_datasheet_en.pdf"],
+        "expected_voltage_min": 2.2,
+        "expected_voltage_max": 3.6
+    },
+    {
+        "query_id": "q3",
+        "query_text": "STM32F446RE Flash SRAM package frequency",
+        "target_component": "STM32F446RE",
+        "relevant_sources": ["DS_stm32f446re.pdf"],
+        "expected_flash": 512,
+        "expected_sram": 128
+    },
+    {
+        "query_id": "q4",
+        "query_text": "STM32F401RE MCU with 512KB Flash",
+        "target_component": "STM32F401RE",
+        "relevant_sources": ["DS_stm32f401re.pdf"],
+        "expected_flash": 512
+    },
+    {
+        "query_id": "q5_ambiguous",
+        "query_text": "ESP32-S3 memory and interfaces",
+        "target_component": "ESP32-S3",
+        "relevant_sources": ["esp32-s3_datasheet_en.pdf"]
+    },
+    {
+        "query_id": "q6_incompatible",
+        "query_text": "STM32F103C8 with 512KB Flash",
+        "target_component": "STM32F103C8",
+        "relevant_sources": ["DS_stm32f103c8.pdf"],
+        "expected_flash": 64,
+        "expected_status_hint": "INCOMPATIBLE"
+    },
+    {
+        "query_id": "q7_voltage_range",
+        "query_text": "STM32G431CB operating voltage",
+        "target_component": "STM32G431CB",
+        "relevant_sources": ["DS_stm32g431cb.pdf"],
+        "expected_voltage_min": 1.7,
+        "expected_voltage_max": 3.6
+    },
+    {
+        "query_id": "q8_multiple_constraints",
+        "query_text": "STM32F407VG 1MB Flash, 192KB SRAM, I2C, SPI",
+        "target_component": "STM32F407VG",
+        "relevant_sources": ["DS_stm32f407vg.pdf"],
+        "expected_flash": 1024,
+        "expected_sram": 192
+    },
+    {
+        "query_id": "q9_insufficient_evidence",
+        "query_text": "ESP32-C3 with 5V voltage",
+        "target_component": "ESP32-C3",
+        "relevant_sources": ["esp32-c3_datasheet_en.pdf"],
+        "expected_status_hint": "INCOMPATIBLE"
+    },
+    {
+        "query_id": "q10_alternative",
+        "query_text": "MCU with 512KB Flash and 128KB SRAM",
+        "target_component": null,
+        "relevant_sources": ["DS_stm32f411re.pdf", "DS_stm32f446re.pdf"]
+    },
+    {
+        "query_id": "q11_exact_vs_alternative",
+        "query_text": "STM32F411RE 512KB Flash",
+        "target_component": "STM32F411RE",
+        "relevant_sources": ["DS_stm32f411re.pdf"],
+        "expected_flash": 512
+    },
+    {
+        "query_id": "q12_missing_spec",
+        "query_text": "STM32F103C8 with 120MHz frequency",
+        "target_component": "STM32F103C8",
+        "relevant_sources": ["DS_stm32f103c8.pdf"],
+        "expected_status_hint": "INCOMPATIBLE"
+    },
+    {
+        "query_id": "q13_no_sufficient_evidence",
+        "query_text": "STM32F446RE neural network accelerator",
+        "target_component": "STM32F446RE",
+        "relevant_sources": ["DS_stm32f446re.pdf"],
+        "expected_status_hint": "POTENTIAL_MATCH" 
+    },
+    {
+        "query_id": "q14_unknown_handling",
+        "query_text": "STM32F401RE 1000 GPIOs",
+        "target_component": "STM32F401RE",
+        "relevant_sources": ["DS_stm32f401re.pdf"],
+        "expected_status_hint": "INCOMPATIBLE"
+    },
+    {
+        "query_id": "q15_datasheet_multiple_parts",
+        "query_text": "STM32F103RB Flash",
+        "target_component": "STM32F103RB",
+        "relevant_sources": ["DS_stm32f103rb.pdf", "DS_stm32f103c8.pdf"],
+        "expected_flash": 128
+    }
+]

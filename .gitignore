@@ -1,0 +1,33 @@
+# Environments
+.env
+venv/
+.venv/
+env/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# IDEs and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Data & Models
+# NOTE: data/chroma_db/ and data/processed/ ARE tracked by design
+# for Streamlit Community Cloud cold-start performance.
+data/models/
+raw_datasheets/
+.ipynb_checkpoints/

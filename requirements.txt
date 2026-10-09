@@ -1,0 +1,12 @@
+pymupdf
+chromadb
+sentence-transformers
+rank-bm25
+flashrank
+pydantic
+streamlit
+python-dotenv
+google-genai
+pandas
+numpy
+langsmith
